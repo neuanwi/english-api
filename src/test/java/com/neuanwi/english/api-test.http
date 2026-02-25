@@ -1,0 +1,10 @@
+### 단어 추가하기 테스트 (POST)
+POST http://localhost:8080/words
+Content-Type: application/json
+
+{
+  "word": "banana",
+  "meaning": "바나나",
+  "language": "EN",
+  "note": "원숭이가 좋아함"
+}
