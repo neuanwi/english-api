@@ -13,10 +13,18 @@ public class Word {
     private Long id;
 
     // 1. 특정 언어 이름 대신 범용적인 이름 사용
-    private String word;     // 단어 (예: apple, manzana, りんご)
+    private String word;     // 단어
     private String meaning;  // 뜻 (예: 사과)
-    private String note;     // 예문이나 메모
-
+    private String category; // 품사
+    private String example;     // 예문이나 메모
     // 2. 언어 구분자 추가
     private String language; // 언어 코드 (예: "EN", "ES", "JA" 등)
+
+    public void update(String word, String meaning, String language, String category, String example) {
+        this.word = word;
+        this.meaning = meaning;
+        this.language = language;
+        this.category = category;
+        this.example = example;
+    }
 }

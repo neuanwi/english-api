@@ -16,7 +16,8 @@ public class WordTest {
         word.setWord("apple");
         word.setMeaning("사과");
         word.setLanguage("EN");
-        word.setNote("I ate an apple");
+        word.setCategory("N");
+        word.setExample("he likes an apple");
 
         wordRepository.save(word);
 
